@@ -1,6 +1,6 @@
 import "./Nav.css";
 import logo from "../../../Quiz.svg";
-import { MdLightMode, MdModeNight } from "react-icons/md";
+import { MdLightMode } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 export const Nav = () => {
