@@ -1,6 +1,12 @@
 import "./CategoryCard.css";
-import { Category } from "../../reducer/quizReducer.types";
 import { Link } from "react-router-dom";
+
+type Category = {
+  _id: string;
+  categoryName: string;
+  description: string;
+  imgUrl: string;
+};
 
 export const CategoryCard = ({
   _id,
