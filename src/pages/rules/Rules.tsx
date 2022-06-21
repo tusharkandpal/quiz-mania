@@ -28,7 +28,7 @@ export const Rules = (): JSX.Element => {
         payload: { points: res?.points },
       });
     })();
-  }, [categoryId]);
+  }, [categoryId, quizDispatch]);
 
   return (
     <main className="rules_main">
