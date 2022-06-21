@@ -4,8 +4,15 @@
   justify-content: space-around;
   align-items: center;
   margin-top: 0.5rem;
+  margin-bottom: 3rem;
 }
 
 .navbar_logo {
   width: 4rem;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar {
+    margin-bottom: 1.5rem;
+  }
 }

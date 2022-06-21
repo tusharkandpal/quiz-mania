@@ -1,0 +1,37 @@
+.rules_main {
+  max-width: 40rem;
+  width: 100%;
+}
+
+.rules,
+.rules_item {
+  padding-left: 0.8rem;
+  padding-top: 0.8rem;
+}
+
+.rules_list,
+.quiz_options_list {
+  padding-inline-start: 0;
+}
+
+.rules_list {
+  padding: 0.8rem;
+}
+
+.rules_item {
+  font-size: 1.2rem;
+  margin: 0.5rem;
+}
+
+.rules_btn,
+.quiz_btn {
+  background-color: var(--active-btn-bg-color);
+  color: var(--secondary-color);
+  margin: 2rem 0.5rem 0.5rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.3rem;
+}
+
+.rules_btn {
+  cursor: pointer;
+}
