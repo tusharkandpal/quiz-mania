@@ -42,7 +42,7 @@ export const Quiz = (): JSX.Element => {
       </ul>
       {activeQuestion === questions.length-1 ? (
         <Link
-          to="/score"
+          to="/result"
           className={`${currentAnswer ? "active_btn" : "inactive_btn"
             } quiz_btn`}
         >
