@@ -11,7 +11,7 @@ export const Result = (): JSX.Element => {
     const correctOption = question.options.filter((option) => option.isRight);
 
     return correctOption[0].text === selectedAnswers[index].answer
-      ? score + 5
+      ? score + points
       : score;
   }, 0);
 
