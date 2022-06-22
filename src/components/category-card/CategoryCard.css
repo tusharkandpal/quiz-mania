@@ -1,26 +1,26 @@
 .category_card {
-    max-width: 25rem;
-    border-radius: 2px;
-    transition: transform 0.3s;
+  max-width: 20rem;
+  border-radius: 2px;
+  transition: transform 0.3s;
 }
 
 .category_card:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .category_img {
-    object-fit: cover;
-    width: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 .category_details {
-    margin-top: -0.5rem;
-    background-color: var(--primary-color);
-    padding: 1.5rem;
-    border-bottom-left-radius: 0.3rem;
-    border-bottom-right-radius: 0.3rem;
+  background-color: var(--primary-color);
+  border-bottom-right-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+  margin-top: -0.5rem;
+  padding: 1.5rem;
 }
 
 .category_header {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }

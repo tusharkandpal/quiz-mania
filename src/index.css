@@ -7,9 +7,12 @@
 :root {
   --primary-color: #b6b6b6;
   --secondary-color: #ececec;
+  --selected-option-color: #a2a9ec;
+  --option-item-hover-color: #aeaeae;
+  --active-btn-bg-color: #292929;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--active-btn-bg-color)
 }
