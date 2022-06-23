@@ -1,0 +1,27 @@
+.result_header {
+  margin-bottom: 1.5rem;
+}
+
+.result {
+  padding-top: 0.5rem;
+  border-top: 2px solid;
+}
+
+.result_option_item,
+.correct_answer,
+.incorrect_answer {
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  margin: 1rem auto;
+  max-width: 18rem;
+  padding: 1rem;
+}
+
+.correct_answer {
+  background-color: var(--correct-answer-color);
+}
+
+.incorrect_answer {
+  background-color: var(--incorrect-answer-color);
+}

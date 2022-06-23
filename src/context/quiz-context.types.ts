@@ -7,12 +7,12 @@ export type QuizType = {
   quizName: string;
   questions: Question[];
   activeQuestion: number;
-  selectedAnswers: selectedAnswer[];
+  selectedAnswers: SelectedAnswer[];
   points: number;
   score: number;
 };
 
-export type selectedAnswer = {
+export type SelectedAnswer = {
   question: string;
   answer: string;
 };

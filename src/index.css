@@ -10,6 +10,8 @@
   --selected-option-color: #a2a9ec;
   --option-item-hover-color: #aeaeae;
   --active-btn-bg-color: #292929;
+  --correct-answer-color: #73d573;
+  --incorrect-answer-color: #e98e8e;
 }
 
 a {
