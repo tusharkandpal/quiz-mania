@@ -1,7 +1,7 @@
 import "./Rules.css";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { useQuiz } from "../../context/quiz-context";
+import { useQuiz } from "../../context/context";
 import { getQuiz } from "../../services/getDataService";
 import { Quiz } from "../pages";
 
