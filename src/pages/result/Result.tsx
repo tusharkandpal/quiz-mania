@@ -1,21 +1,20 @@
 import "./Result.css";
 import { Link } from "react-router-dom";
 import { useQuiz } from "../../context/quiz-context";
+import { getScorePercentage, getTotalScore } from "../../utils/quizUtils";
 
 export const Result = (): JSX.Element => {
   const {
     quizState: { questions, selectedAnswers, points },
   } = useQuiz();
 
-  const totalScore = questions.reduce((score, question, index) => {
-    const correctOption = question.options.filter((option) => option.isRight);
+  const totalScore = getTotalScore(questions, selectedAnswers, points);
 
-    return correctOption[0].text === selectedAnswers[index].answer
-      ? score + points
-      : score;
-  }, 0);
-
-  const scorePercentage = (totalScore / (questions.length * points)) * 100;
+  const scorePercentage = getScorePercentage(
+    questions.length,
+    totalScore,
+    points
+  );
 
   return (
     <main className="quiz_main">
