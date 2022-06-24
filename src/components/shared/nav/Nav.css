@@ -9,6 +9,11 @@
 
 .navbar_logo {
   width: 4rem;
+  height: 4rem;
+}
+
+.theme_icon {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 500px) {

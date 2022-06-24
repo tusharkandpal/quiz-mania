@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
 * {
   margin: 0;
   border: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -16,5 +19,21 @@
 
 a {
   text-decoration: none;
-  color: var(--active-btn-bg-color)
+  color: var(--active-btn-bg-color);
+}
+
+/* THEME CHANGES */
+.dark {
+  --secondary-color: #292929;
+  --primary-color: #4a4a4a;
+  --active-btn-bg-color: #ececec;
+  --option-item-hover-color: #3c3c3c;
+  --selected-option-color: #4a55bb;
+  --correct-answer-color: #247224;
+  --incorrect-answer-color: #bc2525;
+  color: var(--active-btn-bg-color);
+}
+
+.dark .navbar_logo path {
+  fill: var(--active-btn-bg-color);
 }

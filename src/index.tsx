@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from "react-router-dom";
-import { QuizProvider } from "./context/quiz-context";
+import { QuizProvider, ThemeProvider } from "./context/context";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -13,7 +13,9 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <QuizProvider>
-        <App />
+        <ThemeProvider>
+          <App />
+        </ThemeProvider>
       </QuizProvider>
     </BrowserRouter>
   </React.StrictMode>

@@ -1,6 +1,6 @@
 import "./Result.css";
 import { Link } from "react-router-dom";
-import { useQuiz } from "../../context/quiz-context";
+import { useQuiz } from "../../context/context";
 import { getScorePercentage, getTotalScore } from "../../utils/quizUtils";
 
 export const Result = (): JSX.Element => {

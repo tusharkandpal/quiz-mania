@@ -1,4 +1,4 @@
-import { Question, SelectedAnswer } from "../context/quiz-context.types";
+import { Question, SelectedAnswer } from "../context/context";
 
 export const getTotalScore = (
   questions: Question[],
