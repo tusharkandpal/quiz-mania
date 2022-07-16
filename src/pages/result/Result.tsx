@@ -6,6 +6,7 @@ import { getScorePercentage, getTotalScore } from "../../utils/quizUtils";
 export const Result = (): JSX.Element => {
   const {
     quizState: { questions, selectedAnswers, points },
+    quizDispatch,
   } = useQuiz();
 
   const totalScore = getTotalScore(questions, selectedAnswers, points);
@@ -18,7 +19,7 @@ export const Result = (): JSX.Element => {
 
   return (
     <main className="quiz_main">
-      {selectedAnswers.length !== 0 ? (
+      {selectedAnswers.length !== 0 && (
         <>
           <h1 className="result_header">
             Final Score: {totalScore}/{questions.length * points}{" "}
@@ -52,11 +53,14 @@ export const Result = (): JSX.Element => {
             </div>
           ))}
         </>
-      ) : (
-        <Link to="/" className="quiz_btn">
-          Go Back Home
-        </Link>
       )}
+      <Link
+        to="/"
+        className="quiz_btn"
+        onClick={() => quizDispatch({ type: "RESET" })}
+      >
+        Go Back Home
+      </Link>
     </main>
   );
 };
